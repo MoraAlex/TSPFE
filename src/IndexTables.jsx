@@ -4,6 +4,7 @@ import TableAptitude from "./TableAptitude";
 import TableCities from "./TableCities";
 import { useState } from "react";
 import { useEffect } from "react";
+import IndexCurve from "./IndexCurve";
 
 function ConnectedTableCities() {
   const [data, setData] = useState(undefined);
@@ -40,6 +41,7 @@ function ConnectedTableCities() {
     <div style={{ maxWidth: "100%", overflow: "hidden" }}>
       <TableCities paths={paths} />
       <TableAptitude distances={data.Distances} />
+      <IndexCurve />
     </div>
   );
 }
